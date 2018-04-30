@@ -1,0 +1,250 @@
+<html>
+<head>
+<title>TestNG:  Test6</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test6</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Apr 28 12:03:08 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>1224 seconds (1224361 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.org.Dashboard.BrandedBooklet()'><b>BrandedBooklet</b><br>Test class: test.org.Dashboard<br>Test method: Branded Booklet Resources button - click and verification</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[text()=&apos;learn more&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
+System info: host: &apos;USER-PC&apos;, ip: &apos;192.168.1.199&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8220, moz:profile: C:\Users\user\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 75964bea-73b0-43a6-928e-9d7b29edff27
+*** Element info: {Using=xpath, value=//a[text()=&apos;learn more&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at test.org.Dashboard.BrandedBooklet(Dashboard.java:87)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1193939374", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1193939374'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[text()=&apos;learn more&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:33:15.31Z&apos;
+System info: host: &apos;USER-PC&apos;, ip: &apos;192.168.1.199&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;10.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 8220, moz:profile: C:\Users\user\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 75964bea-73b0-43a6-928e-9d7b29edff27
+*** Element info: {Using=xpath, value=//a[text()=&apos;learn more&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at test.org.Dashboard.BrandedBooklet(Dashboard.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>68</td>
+<td>test.org.Dashboard@f09733f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.org.Dashboard.Article()'><b>Article</b><br>Test class: test.org.Dashboard<br>Test method: Article image click and verification</td>
+<td></td>
+<td>41</td>
+<td>test.org.Dashboard@f09733f</td></tr>
+<tr>
+<td title='test.org.Dashboard.FacebookCovers()'><b>FacebookCovers</b><br>Test class: test.org.Dashboard<br>Test method: Facebook Covers - image click and verification</td>
+<td></td>
+<td>30</td>
+<td>test.org.Dashboard@f09733f</td></tr>
+<tr>
+<td title='test.org.Dashboard.agentScript()'><b>agentScript</b><br>Test class: test.org.Dashboard<br>Test method: Agent Script Resources button - click and verification</td>
+<td></td>
+<td>28</td>
+<td>test.org.Dashboard@f09733f</td></tr>
+<tr>
+<td title='test.org.Dashboard.allArticle()'><b>allArticle</b><br>Test class: test.org.Dashboard<br>Test method: All Article button click and verification</td>
+<td></td>
+<td>25</td>
+<td>test.org.Dashboard@f09733f</td></tr>
+<tr>
+<td title='test.org.Dashboard.allfacebookCover()'><b>allfacebookCover</b><br>Test class: test.org.Dashboard<br>Test method: All Facebook Cover click and verification</td>
+<td></td>
+<td>30</td>
+<td>test.org.Dashboard@f09733f</td></tr>
+<tr>
+<td title='test.org.Dashboard.allimageMeme()'><b>allimageMeme</b><br>Test class: test.org.Dashboard<br>Test method: All Image Meme button click and verification</td>
+<td></td>
+<td>30</td>
+<td>test.org.Dashboard@f09733f</td></tr>
+<tr>
+<td title='test.org.Dashboard.allvideoMeme()'><b>allvideoMeme</b><br>Test class: test.org.Dashboard<br>Test method: All Video Meme button click and verification</td>
+<td></td>
+<td>30</td>
+<td>test.org.Dashboard@f09733f</td></tr>
+<tr>
+<td title='test.org.Dashboard.allwistypostcards()'><b>allwistypostcards</b><br>Test class: test.org.Dashboard<br>Test method: All Wisty post Cards button click and verification</td>
+<td></td>
+<td>30</td>
+<td>test.org.Dashboard@f09733f</td></tr>
+<tr>
+<td title='test.org.Dashboard.emailLetter()'><b>emailLetter</b><br>Test class: test.org.Dashboard<br>Test method: Email Letter Resources button - click and verification</td>
+<td></td>
+<td>29</td>
+<td>test.org.Dashboard@f09733f</td></tr>
+<tr>
+<td title='test.org.Dashboard.fcFacebookGroup()'><b>fcFacebookGroup</b><br>Test class: test.org.Dashboard<br>Test method: Tips and Help - FC Facebook Group button -click and verification</td>
+<td></td>
+<td>0</td>
+<td>test.org.Dashboard@f09733f</td></tr>
+<tr>
+<td title='test.org.Dashboard.helpCenter()'><b>helpCenter</b><br>Test class: test.org.Dashboard<br>Test method: Tips and Help - Help Center button - click and verification</td>
+<td></td>
+<td>11</td>
+<td>test.org.Dashboard@f09733f</td></tr>
+<tr>
+<td title='test.org.Dashboard.imageMemes()'><b>imageMemes</b><br>Test class: test.org.Dashboard<br>Test method: Image Memes - image click and verification</td>
+<td></td>
+<td>30</td>
+<td>test.org.Dashboard@f09733f</td></tr>
+<tr>
+<td title='test.org.Dashboard.innercircleDeals()'><b>innercircleDeals</b><br>Test class: test.org.Dashboard<br>Test method: Inner Circle Deals Resources button - click and verification</td>
+<td></td>
+<td>14</td>
+<td>test.org.Dashboard@f09733f</td></tr>
+<tr>
+<td title='test.org.Dashboard.trainingVideo()'><b>trainingVideo</b><br>Test class: test.org.Dashboard<br>Test method: Traning Video Resources button - click and verification</td>
+<td></td>
+<td>12</td>
+<td>test.org.Dashboard@f09733f</td></tr>
+<tr>
+<td title='test.org.Dashboard.verifyDashbo()'><b>verifyDashbo</b><br>Test class: test.org.Dashboard<br>Test method: Dashboard verification</td>
+<td></td>
+<td>20</td>
+<td>test.org.Dashboard@f09733f</td></tr>
+<tr>
+<td title='test.org.Dashboard.videoMemes()'><b>videoMemes</b><br>Test class: test.org.Dashboard<br>Test method: Video Memes - image click and verification</td>
+<td></td>
+<td>31</td>
+<td>test.org.Dashboard@f09733f</td></tr>
+<tr>
+<td title='test.org.Dashboard.wittyPostcards()'><b>wittyPostcards</b><br>Test class: test.org.Dashboard<br>Test method: Witty post Cards Resources button - click and verification</td>
+<td></td>
+<td>15</td>
+<td>test.org.Dashboard@f09733f</td></tr>
+<tr>
+<td title='test.org.Dashboard.wittypostCards()'><b>wittypostCards</b><br>Test class: test.org.Dashboard<br>Test method: Witty Post Cards - image click and verification</td>
+<td></td>
+<td>30</td>
+<td>test.org.Dashboard@f09733f</td></tr>
+</table><p>
+</body>
+</html>

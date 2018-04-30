@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="url"
+			value="https://innercircle.lightersideofrealestate.com/" />
+		<classes>
+			<class name="test.org.TermsofUse" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Test1">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="url"
+			value="https://innercircle.lightersideofrealestate.com/" />
+		<classes>
+			<class name="test.org.PrivacyPolicy" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Test2">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="url"
+			value="https://innercircle.lightersideofrealestate.com/" />
+		<classes>
+			<class name="test.org.ArticleBranding" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Test3">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="url"
+			value="https://innercircle.lightersideofrealestate.com/" />
+		<classes>
+			<class name="test.org.Login" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Test4">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="url"
+			value="https://innercircle.lightersideofrealestate.com/" />
+		<classes>
+			<class name="test.org.Helpcenter" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Test5">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="url"
+			value="https://innercircle.lightersideofrealestate.com/" />
+		<classes>
+			<class name="test.org.ContactUs" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Test6">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="url"
+			value="https://innercircle.lightersideofrealestate.com/" />
+		<classes>
+			<class name="test.org.Dashboard" />
+		</classes>
+	</test> <!-- Test -->
+	
+		<test name="Test7">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="url"
+			value="https://innercircle.lightersideofrealestate.com/" />
+		<classes>
+			<class name="test.org.ForgetPassword" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Test8">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="url"
+			value="https://innercircle.lightersideofrealestate.com/" />
+		<classes>
+			<class name="test.org.OOPS" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Test9">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="url"
+			value="https://innercircle.lightersideofrealestate.com/" />
+		<classes>
+			<class name="test.org.MemeBranding" />
+		</classes>
+	</test> <!-- Test -->
+	
+	
+</suite> <!-- Suite -->
